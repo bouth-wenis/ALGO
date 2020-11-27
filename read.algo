@@ -1,0 +1,52 @@
+ALGORITHM read_sentence
+VAR 
+char:CHAR, carac:CHAR 
+nb-car,len,index
+ Var
+    s, s1: string;
+    cons, voy, blanc, i: entier;
+BEGIN
+read("read_sentence")
+nb-car=0
+len=lengh (sentence)
+FOR i FROM 1 TO len STEP   DO
+    carac-sschaine(snetence,index,1)
+    if <> "esp" then 
+    nb-carac=nb-carac+1
+END_FOR
+
+def compteMots(ph):
+    "fonction qui compte le nombre de mots dans la phrase ph"
+    nbMots = 1
+    p = 0
+    while p < len(ph):  
+        while ph[p] == "":
+            nbMots = 0
+            if ph[p] != "":
+                nbMots = 1
+        p = p + 1
+    i = p
+    while i < len(ph):
+        if ph[i] == " ":
+            nbMots = nbMots + 1
+        i = i + 1
+    return nbMots
+
+ 
+ 
+    s1 := "aeiouy";
+    cons := 0;
+    voy := 0;
+    blanc := 0;
+ 
+    for i := 1 to length(s) DO
+        if (pos(s[i], s) <> 0) then
+            voy := voy + 1;
+        else Si(s[i] == '_') then
+            blanc := blanc + 1;
+        else
+            cons := cons + 1;
+        
+    END_FOR
+ 
+END  
